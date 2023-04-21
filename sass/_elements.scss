@@ -1,0 +1,34 @@
+@use "variables" as *;
+button {
+  border: none;
+  background: none;
+  margin-left: auto;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.unread-counter {
+  background-color: $blue;
+  color: white;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+}
+
+.tab {
+  width: 700px;
+  padding: 0.3rem;
+  margin-bottom: 1rem; // Ukloniti ako gutter odredim sa flexbox gap
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 8%;
+    margin: 0.3rem 1rem;
+  }
+
+  &__text {
+  }
+}

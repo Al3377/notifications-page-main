@@ -1,0 +1,8 @@
+@use "variables" as *;
+.tab-time {
+  display: block;
+}
+
+.unread-tab {
+  background-color: $very-light-grayish-blue;
+}

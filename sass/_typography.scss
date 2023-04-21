@@ -1,0 +1,22 @@
+@use "variables" as *;
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  word-spacing: 3px;
+  letter-spacing: 0.4px;
+}
+.name {
+  font-weight: 800;
+  color: black;
+}
+.gray-500 {
+  font-weight: 500;
+  color: gray;
+}
+.gray-800 {
+  font-weight: 800;
+  color: gray;
+}
+.blue-800 {
+  font-weight: 800;
+  color: $blue;
+}
