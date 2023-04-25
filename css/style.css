@@ -80,14 +80,11 @@ button {
   background: none;
   margin-left: auto;
 }
-button:hover {
-  cursor: pointer;
-}
 
 .unread-counter {
   background-color: hsl(219, 85%, 26%);
   color: white;
-  padding: 0.2rem 0.7rem;
+  padding: 0.1rem 0.7rem;
   border-radius: 5px;
 }
 
@@ -111,6 +108,11 @@ button:hover {
   padding: 0.8rem;
   border: 1px solid hsl(205, 33%, 90%);
   border-radius: 5px;
+}
+
+.private-msg:hover {
+  cursor: pointer;
+  background-color: hsl(205, 33%, 90%);
 }
 
 .img-post {
@@ -152,6 +154,10 @@ body {
   color: hsl(219, 85%, 26%);
 }
 
+.blue-800:hover {
+  cursor: pointer;
+}
+
 .tab-time {
   display: block;
 }
@@ -172,10 +178,22 @@ body {
   padding: 1.3rem;
 }
 
+.pointer-blue:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .notifications {
   max-width: 740px;
-  margin: 3rem auto;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
 @media (max-width: 425px) {
   .notifications {
