@@ -32,12 +32,12 @@
       }
     </style>
   </head>
-  <body>
-    <main class="notifications">
+  <body class="body-color">
+    <main class="notifications main-color main-padding">
       <header class="notifications__header">
         <h2>Notifications</h2>
         <div class="unread-counter">3</div>
-        <button class="gray-500">Mark all as read</button>
+        <button class="gray-500" id="btn">Mark all as read</button>
       </header>
       <section class="notifications__tabs">
         <div class="tab unread-tab">
@@ -48,11 +48,13 @@
             />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name">Mark Webber</span>
               <span class="gray-500">reacted to your recent post</span>
               <span class="gray-800"> My first tournament today! </span>
+              <span class="not-dot dot"> </span>
             </p>
+
             <div class="tab__time gray-500">1m ago</div>
           </div>
         </div>
@@ -64,9 +66,10 @@
             />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name">Angela Gray</span>
               <span class="gray-500">followed you 5m ago</span>
+              <span class="not-dot dot"> </span>
             </p>
             <div class="tab__time gray-500">5m ago</div>
           </div>
@@ -79,10 +82,11 @@
             />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name">Jacob Thompson</span>
               <span class="gray-500">has joined your group </span>
               <span class="blue-800">Chess Club</span>
+              <span class="not-dot dot"> </span>
             </p>
             <div class="tab__time gray-500">1 day ago</div>
           </div>
@@ -95,7 +99,7 @@
             />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name">Rizky Hasanuddin </span>
               <span class="gray-500">sent you a private message </span>
             </p>
@@ -103,7 +107,7 @@
           </div>
         </div>
         <div class="private-msg gray-500">
-          <p>
+          <p class="not">
             Hello, thanks for setting up the Chess Club. I've been a member for
             a few weeks now and I'm already having lots of fun and improving my
             game.
@@ -117,7 +121,7 @@
             />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name">Kimberly Smith</span>
               <span class="gray-500">commented on your picture</span>
             </p>
@@ -138,7 +142,7 @@
             />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name">Nathan Peterson</span>
               <span class="gray-500">reacted to your recent post </span>
               <span class="gray-800"
@@ -153,7 +157,7 @@
             <img src="./assets/images/avatar-anna-kim.webp" alt="profile pic" />
           </div>
           <div class="tab__text">
-            <p>
+            <p class="not">
               <span class="name"> Anna Kim</span>
               <span class="gray-500">left the group </span
               ><span class="blue-800">Chess Club</span>
@@ -173,7 +177,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Alen Vitas</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
