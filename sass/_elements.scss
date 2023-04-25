@@ -28,7 +28,18 @@ button {
     width: 8%;
     margin: 0.3rem 1rem;
   }
+}
 
-  &__text {
-  }
+.private-msg {
+  max-width: 600px;
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid $light-grayish-blue-2;
+  border-radius: 5px;
+}
+
+.img-post {
+  width: 7%;
+  margin-left: auto;
 }
