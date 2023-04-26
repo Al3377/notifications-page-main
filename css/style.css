@@ -89,16 +89,25 @@ button {
 }
 
 .tab {
-  width: 700px;
   padding: 0.3rem;
   margin-bottom: 1rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .tab {
+    margin-bottom: 0.6rem;
+  }
+}
 .tab__img {
-  width: 8%;
+  max-width: 55px;
   margin: 0.3rem 1rem;
+}
+@media (max-width: 600px) {
+  .tab__img {
+    max-width: 35px;
+  }
 }
 
 .private-msg {
@@ -116,7 +125,7 @@ button {
 }
 
 .img-post {
-  width: 7%;
+  max-width: 7%;
   margin-left: auto;
 }
 
@@ -132,6 +141,16 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   word-spacing: 3px;
   letter-spacing: 0.4px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 0.6rem;
+  }
 }
 
 .name {
@@ -177,28 +196,28 @@ body {
 .main-padding {
   padding: 1.3rem;
 }
+@media (max-width: 600px) {
+  .main-padding {
+    padding: 0;
+  }
+}
 
 .pointer-blue:hover {
   color: hsl(219, 85%, 26%);
   cursor: pointer;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .notifications {
   max-width: 740px;
+  height: auto;
+  margin: 3rem auto;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .notifications {
     max-width: 100%;
-    margin: 3rem 1rem;
+    margin: 1rem;
   }
 }
 .notifications__header {
@@ -210,6 +229,11 @@ body {
 }
 .notifications__tabs {
   margin-top: 2.5rem;
+}
+@media (max-width: 600px) {
+  .notifications__tabs {
+    margin-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

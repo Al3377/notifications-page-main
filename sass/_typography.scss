@@ -3,6 +3,12 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   word-spacing: 3px;
   letter-spacing: 0.4px;
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 0.6rem;
+  }
 }
 .name {
   font-weight: 800;

@@ -13,17 +13,23 @@ button {
 }
 
 .tab {
-  width: 700px;
+  // width: 700px;
   padding: 0.3rem;
-  margin-bottom: 1rem; // Ukloniti ako gutter odredim sa flexbox gap
+  margin-bottom: 1rem;
   border-radius: 10px;
-
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    margin-bottom: 0.6rem;
+  }
 
   &__img {
-    width: 8%;
+    max-width: 55px;
+
     margin: 0.3rem 1rem;
+    @media (max-width: 600px) {
+      max-width: 35px;
+    }
   }
 }
 
@@ -41,7 +47,7 @@ button {
 }
 
 .img-post {
-  width: 7%;
+  max-width: 7%;
   margin-left: auto;
 }
 .dot {

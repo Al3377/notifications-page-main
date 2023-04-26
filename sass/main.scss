@@ -2,20 +2,16 @@
 @use "elements";
 @use "typography";
 @use "utilities";
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 .notifications {
   max-width: 740px;
-  // margin: 3rem auto;
+  height: auto;
+  margin: 3rem auto;
   border-radius: 5px;
   margin-bottom: 1rem;
-  @media (max-width: 425px) {
+  @media (max-width: 600px) {
     max-width: 100%;
-    margin: 3rem 1rem;
+    margin: 1rem;
   }
   &__header {
     display: flex;
@@ -26,5 +22,8 @@ body {
   }
   &__tabs {
     margin-top: 2.5rem;
+    @media (max-width: 600px) {
+      margin-top: 1rem;
+    }
   }
 }
